@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<modification>
+	<id><![CDATA[[OCMOD] Admin > Catalog > Product > Filter, change limit]]></id>
+	<name><![CDATA[Admin > Catalog > Product > Filter, change limit]]></name>
+	<code>knns-admin-catalog-product-filter-change-limit</code>
+	<version>0.1.0</version>
+	<author><![CDATA[<font color="#7F458C"><b>kanenas.net (aka Nikolas Branis)</b></font> - nbran@kanenas.net]]></author>
+	<link>https://kanenas.net/</link>
+	<file path="admin/controller/catalog/filter.php" error="log">
+		<operation error="skip">
+			<search><![CDATA['limit'       => 5]]></search>
+			<add position="replace"><![CDATA[				'limit'       => 25]]></add>
+		</operation>
+	</file>
+</modification>
